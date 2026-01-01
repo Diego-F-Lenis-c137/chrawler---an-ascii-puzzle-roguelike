@@ -19,8 +19,7 @@ class LabGen():
 
     def in_out(self, g):
         spaces = [i for i in range(len(self.m))]
-        spaces.remove(0)
-        
+         
         print(spaces)
         ent = self.genpair(spaces)
         ex = []
@@ -41,6 +40,18 @@ class LabGen():
         self.ent = ent
         self.ex = ex
 
+    def walls(h = len(self.m)):
+        rooms = r.randint(0, h) if h
+        
+
     def pathGen():
         pass
-            
+
+if __name__ == "__main__":
+    import sys
+    
+    s = [int(i) for i in sys.argv[1].split(",")]
+    g = int(sys.argv[2])
+
+    LabGen(s,g)
+
